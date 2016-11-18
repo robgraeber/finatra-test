@@ -1,0 +1,19 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- The logging pattern -->
+            <pattern>%date [%highlight(%level)] - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Levels of specific loggers -->
+    <!--<logger name="com.twitter" level="info"/>-->
+    <!--<logger name="com.twitter.finatra.http.filters.AccessLoggingFilter" level="info"/>-->
+
+    <!-- Logging level for every logger -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
